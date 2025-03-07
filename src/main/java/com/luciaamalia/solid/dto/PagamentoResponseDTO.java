@@ -1,15 +1,17 @@
 package com.luciaamalia.solid.dto;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
+import java.util.UUID;
+
 
 @Getter
 @Setter
-@NoArgsConstructor
+@NoArgsConstructor // Gera um construtor vazio
+@AllArgsConstructor
 public class PagamentoResponseDTO {
 
-    private Long idPagamento;
+    private UUID idPagamento;
     private double valor;
     private String tipoPagamento;
 
